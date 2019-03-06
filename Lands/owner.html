@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css"><!-- 
+	<link rel="stylesheet" type="text/css" href="css/style.css"> -->
+	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
+	<script type="text/javascript" src="flickity/flickity.js"></script>
+	<title>Lands</title>
+	<style type="text/css">
+	body{
+		overflow-x: hidden;
+	}
+		nav{
+			height: 70px;
+			padding: 10px;
+		}
+		.navbar-brand{
+			color: #fff;
+		}
+
+		.btns{
+			height: 50px;
+			background-color: #fff;border: 1px solid #4D839E;color: #4D839E;font-size: 19px;margin: 10px
+		}
+
+		.row{
+			margin-bottom: 15px;
+		}
+		p{
+			padding: 10px;
+		}
+
+		th{
+			background-color: #4D839E;
+		}
+
+		.page-header{
+			border-bottom: 1px solid #31C9F7;
+		}
+
+
+	</style>
+</head>
+<body>
+<div class="container-fluid col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-11 col-xs-12" style="margin-top: 70px;margin-bottom: 20px;border-bottom: 2px solid #31C9F7">
+		<div class="row">
+			<div class="col-lg-7">
+			<div class="row col-lg-3" style="margin: 4px">
+				<span class="thumbnail">
+					<img src="images/header-bg.jpg">
+				</span>
+			</div>
+				<h4 style="font-size: 35px;font-family: sans-serif;color: #4D839E;font-weight: normal;margin-bottom: 0px;margin-top: 45px">Geomatic Application Ltd.</h4><br>
+				
+			</div>
+			<div class="col-lg-5">
+				<h4 style="font-size: 40px;font-family: gabriola;color: #4D839E;font-weight: normal;">Akani Ancestral Land Emene Nike</h4>
+				<p>N0. 35 Ogui Road Bus-stop Near Ukwa street.</p>
+				<div class="pull_right" style="margin-top: 10px;">
+					<a href="index.html"><button class="btns btn btn-primary">Home</button></a>
+					<a href="view_client.html"><button class="btns btn btn-primary">Information</button></a>
+					<a href="register.html"><button class="btns btn btn-primary" >Regsiter</button></a>
+				</div>
+				
+				
+			</div>	
+		</div>
+
+    </div>
+
+    </div>
+    <div class="row col-lg-12 col-lg-offset-3">
+	  <div class=" col-lg-5 col-xs-12 col-md-3">
+			
+		  	<div class="col-lg-12 col-md-5 col-md-offset-1 col-sm-12 col-lg-offset-1" style="margin-top: 35px">
+  <h4 class="page-header" style="margin-top: 0px">First Owner
+  	<span class="badge pull-right" style="background-color: #4D839E;cursor: pointer;" id="first" onclick="edit()">Edit&nbsp; 
+  		<span class="glyphicon glyphicon-pencil"></span>
+  	</span>
+  </h4>
+  <form action="." method="post" class="form-inline" role="form">
+		   <div class="input-group col-lg-12 col-md-12 " style="margin-bottom: 25px">
+		                <span class="input-group-addon">Name</span>
+		                <input type="text" id="login-user" class="form-control" name="lastname" value="Mr Bams" disabled="true" />
+        </div>
+         <div class="input-group col-lg-12 col-md-12 " style="margin-bottom: 25px">
+                <span class="input-group-addon">Plan No.</span>
+                <input type="text" id="login-user" class="form-control" name="lastname" value="Mr Bams" disabled="true" />
+        </div>
+         <div class="input-group col-lg-12 col-md-12 " style="margin-bottom: 25px">
+                <span class="input-group-addon">Phone No.</span>
+                <input type="text" id="login-user" class="form-control" name="lastname" value="0806775432" disabled="true" />
+        </div>
+        <p class="page-header">Passport 
+        	<span class="badge pull-right" style="background-color: #4D839E;cursor: pointer;" id="first" onclick="edit()">Edit&nbsp; 
+  				<span class="glyphicon glyphicon-pencil"></span>
+  			</span>
+  	   </p>
+        <div class="row col-lg-12" style="margin: 4px">
+				<span class="thumbnail">
+					<img src="images/header-bg.jpg">
+				</span>
+			</div>
+   </form>     
+
+   <button class="btn btn-primary pull-right" disabled="">Update</button>               
+  	
+  </div>
+	  </div><br>
+	  
+
+
+<script type="text/javascript">
+	 function edit() {
+  		  var input_element = document.querySelectorAll("#login-user");
+
+      	  for (var i = 0; i < input_element.length; i++) {
+      	  	 if (input_element[i].disabled) {
+      	  	 	document.getElementById("first").innerHTML = "Disable";
+      	     	input_element[i].disabled = false;
+
+      	  	 }else{
+      	  	 	document.getElementById("first").innerHTML = "Edit";
+      	   		input_element[i].disabled = true;
+
+      	  	 }
+      	   } 
+
+      }
+</script>
+</body>
+</html>

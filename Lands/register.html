@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css"><!-- 
+	<link rel="stylesheet" type="text/css" href="css/style.css"> -->
+	<link rel="stylesheet" type="text/css" href="flickity/flickity.css">
+	<script type="text/javascript" src="flickity/flickity.js"></script>
+	<title>Lands</title>
+	<style type="text/css">
+		nav{
+			height: 70px;
+			padding: 10px;
+		}
+		.navbar-brand{
+			color: #fff;
+		}
+
+		.btn{
+			height: 50px;
+			background-color: #fff;
+			border: 1px solid #4D839E;
+			color: #4D839E;
+			font-size: 19px;
+			margin: 10px
+		}
+
+		.row{
+			margin-bottom: 15px;
+		}
+		p{
+			padding: 10px;
+		}
+		.page-header{
+			border-bottom: 2px solid  #4D839E;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container-fluid col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-11 col-xs-12" style="margin-top: 70px;margin-bottom: 20px;border-bottom: 2px solid #31C9F7">
+        <div class="row">
+            <div class="col-lg-7">
+            <div class="row col-lg-3" style="margin: 4px">
+                <span class="thumbnail">
+                    <img src="images/header-bg.jpg">
+                </span>
+            </div>
+                <h4 style="font-size: 35px;font-family: sans-serif;color: #4D839E;font-weight: normal;margin-bottom: 0px;margin-top: 45px">Geomatic Application Ltd.</h4><br>
+                
+            </div>
+            <div class="col-lg-5">
+                <h4 style="font-size: 40px;font-family: gabriola;color: #4D839E;font-weight: normal;">Akani Ancestral Land Emene Nike</h4>
+                <p>N0. 35 Ogui Road Bus-stop Near Ukwa street.</p>
+                <div class="pull_right" style="margin-top: 10px;">
+                    <a href="index.html"><button class="btns btn btn-primary">Home</button></a>
+                    <a href="view_client.html"><button class="btns btn btn-primary">Information</button></a>
+                    <a href="register.html"><button class="btns btn btn-primary" >Regsiter</button></a>
+                </div>
+                
+                
+            </div>  
+        </div>
+
+    </div>
+    <div class=" col-lg-8 col-lg-offset-2 col-md-9 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12" style="margin-top: 60px">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <div class="panel-title">Register Client</div>
+            </div>
+            <div style="padding-top: 30px" class="panel-body">
+                <div style="display: none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                    <form action="." method="post" class="form-inline" role="form">
+                       <div class="input-group col-lg-5 col-md-5 " style="margin-bottom: 25px">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="text" id="login-user" class="form-control" name="lastname" placeholder="First Name"/>
+                        </div>
+
+                         <div class="input-group col-lg-5 col-md-5 col-md-offset-1" style="margin-bottom: 25px">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="text" id="login-user" class="form-control" name="middlename" placeholder="Middle NAme"/>
+                        </div>
+                         <div class="input-group col-lg-5 col-md-5 " style="margin-bottom: 25px">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="text" id="login-user" class="form-control" name="lastname" placeholder="LastName"/>
+                        </div>
+                         <div class="input-group col-lg-5 col-md-5 col-md-offset-1" style="margin-bottom: 25px">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                            <input type="text" id="login-user" class="form-control" name="middlename" placeholder="Address"/>
+                        </div>
+                         <div class="input-group col-lg-5 col-md-5 " style="margin-bottom: 25px">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input type="text" id="login-user" class="form-control" name="lastname" placeholder="Email"/>
+                        </div>
+                       
+                         <div class="input-group col-lg-5 col-md-5 col-md-offset-1" style="margin-bottom: 25px">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                            <input type="text" id="login-user" class="form-control" name="middlename" placeholder="Phone No."/>
+                        </div>
+                         <div class="input-group col-lg-5 col-md-5 " style="margin-bottom: 25px">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="text" id="login-user" class="form-control" name="lastname" placeholder="Plot No."/>
+                        </div>
+                         <div class="input-group col-lg-5 col-md-5 col-md-offset-1" style="margin-bottom: 25px">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="text" id="login-user" class="form-control" name="middlename" placeholder="Plan No."/>
+                        </div>
+						<div class="input-group col-lg-5 col-md-5" style="margin-bottom: 25px;">
+							   <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                              <input type="password" id="login-password" class="form-control" name="password" placeholder="Plot Address"/>
+						     
+						</div>
+                        <div class="input-group col-lg-5 col-md-5 col-md-offset-1" style="margin-bottom: 25px">
+                            <span class="input-group-addon">Passport</span>
+						      <input type="file" id="login-password" class="form-control" name="password" placeholder="passport" />
+                        </div>
+                   
+                        <h3 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 page-header">Next of Kin</h3>
+                       	<div class="input-group col-lg-12 col-md-5 " style="margin-bottom: 25px">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="text" id="login-user" class="form-control" name="lastname" placeholder="Full Name"/>
+                        </div>
+
+                         <div class="input-group col-lg-5 col-md-5 " style="margin-bottom: 25px">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                            <input type="text" id="login-user" class="form-control" name="lastname" placeholder="Phone No."/>
+                        </div>
+
+                         <div class="input-group col-lg-5 col-md-5 col-md-offset-1" style="margin-bottom: 25px">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                            <input type="text" id="login-user" class="form-control" name="middlename" placeholder="Address"/>
+                        </div>
+                      
+                        
+                         <div class="form-group col-lg-12 col-md-12" style="margin-bottom: 10px">
+                            <div class="col-lg-6 col-sm-12 controls">
+                                <a href="#portlet-config" data-toggle="modal"></a>
+                                <input type="submit" id="btn-login" class="btn btn-primary" value="Register"/>
+                            </div>
+                        </div>
+                      
+                        <!-- <input type="hidden" name="next" value="{{ next }}"/> -->
+                    </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span>&times;</span></button>
+							<h4 class="modal-title">LOGIN</h4>
+						</div>
+						<div class="modal-body">
+							 <form action="." method="post" class="form-horizontal" role="form">
+                        <div class="input-group" style="margin-bottom: 25px">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="text" id="login-user" class="form-control" name="username" placeholder="username"/>
+                        </div>
+                        <div class="input-group" style="margin-bottom: 25px">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input type="password" id="login-password" class="form-control" name="password" placeholder="password"/>
+                        </div>
+                         <div class="form-group " style="margin-bottom: 25px">
+                            <div class="col-lg-6 col-sm-12 controls">
+                                <input type="submit" id="btn-login" class="btn btn-primary" value="Login"/>
+                               
+                            </div>
+                        </div>
+                        <!-- <input type="hidden" name="next" value="{{ next }}"/> -->
+                    </form>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal-dialog -->
+			</div>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>    
+</body>
+</html>
